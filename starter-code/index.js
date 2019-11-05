@@ -19,11 +19,11 @@ class SortedList {
   }
   max() {
     if (this.length === 0) throw new Error("EmptySortedList");
-    return this.items[this.length - 1];
+    return Math.max(...this.items);
   }
   min() {
     if (this.length === 0) throw new Error("EmptySortedList");
-    return this.items[0];
+    return Math.min(...this.items);
   }
   average() {
     if (this.length <= 0) throw new Error("EmptySortedList");
